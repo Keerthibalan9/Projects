@@ -1,0 +1,15 @@
+.hero{
+    background: url(https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)rgba(0,0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+@media(max-width: 991px)
+{
+    .sidebars{
+        background-color: rgb(23, 22, 22, 0.80) !important;
+        backdrop-filter: blur(10px);
+    }
+}
