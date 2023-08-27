@@ -13,3 +13,80 @@
         backdrop-filter: blur(10px);
     }
 }
+
+.txt-md{
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.txt-sm{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.bgim{
+    background: url(https://images.pexels.com/photos/1402790/pexels-photo-1402790.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) rgba(0,0, 0, 0.5);
+    width: 100vw;
+    min-height: 600px;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    color: white;
+}
+
+.fold2{
+    width: 100vw;
+    height: auto;
+}
+.fold3{
+    width: 100vw;
+    height: auto;
+}
+
+@media screen and (max-width:479px) and (min-width:320px)
+{
+    .txt-md{
+        font-size: 24px;
+        font-weight: 600;
+       
+    }
+    .txt-sm{
+        font-size: 16px;
+        
+    }
+    .bgim{
+        background: url(https://images.pexels.com/photos/1402790/pexels-photo-1402790.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) rgba(0,0, 0, 0.5);
+        width: 100vw;
+        min-height: auto;
+        background-blend-mode: multiply;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;    
+        color: white;
+    }
+}
+
+.input-box{
+   
+    height: 50px;
+}
+.footer-bg{
+   
+   
+    background-color: rgb(39, 37, 37);
+
+}
+
+.margin-100y{
+    margin: 100px 0px;
+
+}
+
+.padding-100{
+    padding: 100px 0px;
+}
+
+.footer-text{
+    color: white;
+}
