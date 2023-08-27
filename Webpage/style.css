@@ -1,3 +1,5 @@
+
+
 .hero{
     background: url(https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)rgba(0,0, 0, 0.5);
     background-blend-mode: multiply;
@@ -26,8 +28,8 @@
 
 .bgim{
     background: url(https://images.pexels.com/photos/1402790/pexels-photo-1402790.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) rgba(0,0, 0, 0.5);
-    width: 100vw;
-    min-height: 600px;
+    
+    
     background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
