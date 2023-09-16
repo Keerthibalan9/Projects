@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+
   }
 
 body {
@@ -11,6 +11,11 @@ body {
     width: 100%;
     background-color: #99c089;
 }
+
+@font-face {
+    font-family: calci;
+    src: url(digital-7.ttf);
+ }
 
 .container{
     position: absolute;
@@ -29,19 +34,21 @@ body {
 .display
 {
     background-color: white;
-    padding: 16px 24px;
+    padding: 12px 24px;
     border-radius: 14px;
-    font-size: 36px;
+    font-size: 48px;
     display: flex;
     justify-content: end;
     align-items: center;
     border-bottom: 6px solid #49484b;
     box-shadow: 0px -2px 6px #49484b;
     margin-bottom: 26px;
+    font-family: calci;
 }
 
 .buttonStyle
 {
+font-family: 'Poppins', sans-serif;
 padding: 8px 20px;
 font-size: 26px;
 border-radius: 8px;
