@@ -6,11 +6,13 @@ function func1(){
     b.style.backgroundColor="#ca3120"  
 
     let c=document.getElementById("wait");
-    c.style.backgroundColor="#494e66"
+    c.style.backgroundColor="#ffffff"
+    c.style.color="black"
     let d=document.getElementById("waitlt");
     d.style.backgroundColor="#494e66"
     let e=document.getElementById("go");
-    e.style.backgroundColor="#494e66"
+    e.style.backgroundColor="#ffffff"
+    e.style.color="black"
     let f=document.getElementById("golt");
     f.style.backgroundColor="#494e66" 
 }
@@ -22,11 +24,13 @@ function func2(){
   b.style.backgroundColor="#f0ad4e" 
 
   let c=document.getElementById("stop");
-  c.style.backgroundColor="#494e66"
+  c.style.backgroundColor="#ffffff"
+  c.style.color="black"
   let d=document.getElementById("stoplt");
   d.style.backgroundColor="#494e66"
   let e=document.getElementById("go");
-  e.style.backgroundColor="#494e66"
+  e.style.backgroundColor="#ffffff"
+  e.style.color="black"
   let f=document.getElementById("golt");
   f.style.backgroundColor="#494e66" 
 }
@@ -38,11 +42,13 @@ function func3(){
   b.style.backgroundColor="#11a676" 
 
   let c=document.getElementById("stop");
-  c.style.backgroundColor="#494e66"
+  c.style.backgroundColor="#ffffff"
+  c.style.color="black"
   let d=document.getElementById("stoplt");
   d.style.backgroundColor="#494e66"
   let e=document.getElementById("wait");
-  e.style.backgroundColor="#494e66"
+  e.style.backgroundColor="#ffffff"
+  e.style.color="black"
   let f=document.getElementById("waitlt");
   f.style.backgroundColor="#494e66" 
 }
