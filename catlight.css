@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.pos{
+    position: absolute;
+    top: 70%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+
+}
+body{
+    background-color: black;
+}
+.lightPos{
+    position: absolute;
+    left: 41%;
+    bottom: 65%;  
+}
+.board{
+    background-color: grey;
+    border-radius: 1rem;
+    color: white;
+    width: 200px;
+    text-align: center;
+    position: absolute;
+    left: 45%;
+    top: 80%; 
+}
+.board h3{
+    padding: 16px;
+}
+.buttonOffdef{
+    padding: 8px 16px;
+    background-color: rgb(185, 185, 185);
+    border-radius: 8px;
+    margin-bottom: 16px;
+   
+}
+.buttonOn{
+    padding: 8px 16px;
+    background-color:green;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+.buttonOn:hover{
+    padding: 8px 16px;
+    background-color:rgb(2, 99, 2);
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+.buttonOffdef:hover{
+    padding: 8px 16px;
+    background-color: rgb(212, 212, 212);
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
