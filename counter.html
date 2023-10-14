@@ -1,11 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Counter</title>
+
+    <style>
+        .main {
+            width: 400px;
+            height: auto;
+            text-align: center;
+            background-color: #232D3F;
+            color: black;
+            padding: 20px;
+            border-radius: 20px;
+            position: absolute;
+            top: 30%;
+            left: 40%;
+        }
+
+        h1 {
+
+            color: white;
+        }
+
+        h2 {
+            background-color: white;
+            padding: 20px;
+            width: auto;
+            height: 40px;
+            text-align: center;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-radius: 16px;
+            text-align: center;
+            color: rgb(84, 84, 84);
+        }
+
+        .btnStyle {
+            background-color: rgb(0, 189, 138);
+            font-weight: 800;
+            padding: 16px 20px;
+            border: none;
+            border-radius: 2rem;
+            cursor: pointer;
+            margin-bottom: 20px;
+            margin-right: 8px;
+        }
+
+        .btnStyle:hover {
+            background-color: rgb(0, 158, 116);
+            font-weight: 800;
+            padding: 16px 20px;
+            border: none;
+            border-radius: 2rem;
+            cursor: pointer;
+            margin-bottom: 20px;
+            margin-right: 8px;
+        }
+    </style>
+
 </head>
+
 <body>
-    
+    <div class="main">
+        <h1>Counter</h1>
+        <h2 id="num">0</h2>
+        <button class="btnStyle" id="inc" onclick="increment()">Increase +</button>
+        <button class="btnStyle" id="dec" onclick="decrement()">Decrease -</button>
+        <button class="btnStyle" id="res" onclick="reset()">Reset</button>
+        <div>
+
+
+            <script>
+                let op = document.getElementById("num")
+                let inc = document.getElementById("inc")
+                let dec = document.getElementById("dec")
+                let res = document.getElementById("res")
+                let count=0;
+
+
+                function increment() {
+                  let ans=count+=1;
+                  op.innerHTML = ans
+                }
+                function decrement() {
+                  let ans=count-=1;
+                  op.innerHTML = ans
+                }
+
+                function reset() {
+                    let zero = " 0 "
+                    op.innerHTML = zero
+                }
+            </script>
+
 </body>
+
 </html>
