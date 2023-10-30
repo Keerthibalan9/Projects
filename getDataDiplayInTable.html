@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            font-family: poppins;
+        }
+        table {
+            border: 1px;
+            border-color: rgb(0, 0, 0);
+            border-collapse: collapse;
+            border-style: solid;
+            border-radius: 8px;
+        }
+
+        th{
+            border: 1px rgb(0, 0, 0) solid;
+            border-collapse: collapse;
+            width: 200px;
+            background-color: #5B0888;
+            color: white;
+            font-weight: 300;
+            padding: 8px;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-around;
+        }
+        .second{
+            width: 70%;
+            padding: 40px;
+        }
+        .inputSec{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            height: 100vh;
+            padding: 40px;
+            background-color: #E5CFF7;
+        }
+        input{
+            border-radius: 8px;
+            border: none;
+            height: 40px;
+            margin-bottom: 16px;
+        }
+       
+        label{
+            margin-bottom: 8px;
+        }
+        h3{
+            color: #5B0888;
+            margin-bottom: 12px;
+        }
+        button{
+            border-radius: 8px;
+            background-color: #5B0888;
+            border: none;
+            height: 50px;
+            color: white;
+            margin-top: 16px;
+            cursor: pointer;
+        }
+        button:hover{
+            border-radius: 8px;
+            background-color: #510778;
+            border: none;
+            height: 50px;
+            color: white;
+            margin-top: 16px;
+            cursor: pointer;
+        }
+        td{
+            text-align: center;
+            border: 1px rgb(65, 65, 65) solid;
+            border-collapse: collapse;
+            width: 200px;
+            padding: 8px;
+        }
+        tr:nth-child(odd) {
+    background-color: #f0e4f9;
+}
+.imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="inputSec">
+            <h3>Enter Student details</h3>
+            <label for="">Roll. No.</label>
+            <input type="number" id="input1">
+            <label for="">Name</label>
+            <input type="text" id="input2">
+            <label for="">Maths</label>
+            <input type="number" id="input3">
+            <label for="">Physics</label>
+            <input type="number" id="input4">
+            <label for="">Chemistry</label>
+            <input type="number" id="input5">
+            <button onclick="Add()">Add Record</button>
+        </div>
+
+        <div class="second">
+            <h3>Students Record</h3>
+            <table id="tb1">
+                <tr>
+                    <th>Roll. No.</th>
+                    <th>Name</th>
+                    <th>Maths</th>
+                    <th>Physics</th>
+                    <th>Chemistry</th>
+                </tr>
+                <tr id="pl1"></tr>
+
+            </table>
+            <div class="imgs">
+            <img src="https://mmcollege.ac.in/images/norecordfound.png" alt="nofile" id="empty">
+        </div>
+        </div>
+    </div>
+    <script>
+
+        function Add() {
+    
+            if (!input1.value || !input2.value || !input3.value || !input4.value || !input5.value) {
+                alert("Fill all field")
+            }
+            else {
+                let roll = document.getElementById("input1").value;
+                let rollno = parseInt(roll);
+                let name = document.getElementById("input2").value;
+                let mark2 = document.getElementById("input3").value;
+                let mark22 = parseInt(mark2);
+                let mark3 = document.getElementById("input4").value;
+                let mark33 = parseInt(mark3);
+                let mark4 = document.getElementById("input5").value;
+                let mark44 = parseInt(mark4);
+                let newRow = document.createElement("tr");
+                newRow.innerHTML = `
+      <td>${rollno}</td>
+      <td>${name}</td>
+      <td>${mark22}</td>
+      <td>${mark33}</td>
+      <td>${mark44}</td>    `;
+                tb1.appendChild(newRow);
+                input1.value = " "
+                input2.value = " "
+                input3.value = " "
+                input4.value = " "
+                input5.value = " "
+                let im=document.getElementById("empty")
+                im.parentNode.removeChild(im);
+            }
+        }
+
+    </script>
+    
+</body>
+
+</html>
